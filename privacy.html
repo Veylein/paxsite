@@ -2,31 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pax – Privacy Policy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Pax Privacy Policy</h1>
-</header>
 
-<section>
-    <p>Pax stores only the minimum data required to make the bot function:</p>
-    <ul>
-        <li>User ID (for leveling, pets, stats)</li>
-        <li>Guild ID (for server-wide settings)</li>
-        <li>Game data (items, chi, achievements, etc.)</li>
-    </ul>
+    <!-- ================== NAVBAR ================== -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Gold_star_icon.png" alt="VIP Badge" style="height:24px; vertical-align:middle; margin-right:8px;">
+            Pax
+        </div>
+        <ul>
+            <li><a href="tos.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="invite.html">Invite</a></li>
+            <li><a href="credits.html">Creator</a></li>
+            <li><a href="extra.html">Extra</a></li>
+        </ul>
+    </nav>
 
-    <p>Pax does NOT collect or store:</p>
-    <ul>
-        <li>Messages</li>
-        <li>Passwords</li>
-        <li>Emails</li>
-        <li>Personal identifying information</li>
-    </ul>
+    <!-- ================== HERO SECTION ================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy is important. This policy explains what information Pax collects and how it is used, stored, and protected.</p>
+        </div>
+    </section>
 
-    <p>You may request deletion of your Pax data at any time via the support server.</p>
-</section>
+    <!-- ================== PRIVACY POLICY ================== -->
+    <section>
+        <h2 class="section-title">Privacy Policy</h2>
+        <div class="section-content">
+
+            <button class="collapsible">1. Information We Collect</button>
+            <div class="content">
+                <p>Pax collects the following types of information:</p>
+                <ul>
+                    <li>Discord User ID, username, and discriminator</li>
+                    <li>Server ID and name where Pax is used</li>
+                    <li>Bot-specific data such as pets, achievements, chi, and game progress</li>
+                </ul>
+                <p>We do not collect passwords, personal emails, or any sensitive financial information.</p>
+            </div>
+
+            <button class="collapsible">2. How We Use Your Data</button>
+            <div class="content">
+                <p>Data collected is used solely to provide and improve the Pax experience, including:</p>
+                <ul>
+                    <li>Tracking game progression, pets, and achievements</li>
+                    <li>Enabling cross-server stats and leaderboards</li>
+                    <li>Personalizing in-bot messages and notifications</li>
+                </ul>
+                <p>No data is sold or shared with third parties.</p>
+            </div>
+
+            <button class="collapsible">3. Data Retention</button>
+            <div class="content">
+                <p>User data is stored securely as long as the user interacts with Pax. Inactive accounts may have data archived or deleted after extended inactivity, at the discretion of the developers.</p>
+            </div>
+
+            <button class="collapsible">4. Data Security</button>
+            <div class="content">
+                <p>Pax developers employ best practices for security, including encrypted storage and secure servers. However, no method of data transmission over the internet can be 100% secure. By using Pax, you accept this risk.</p>
+            </div>
+
+            <button class="collapsible">5. User Rights</button>
+            <div class="content">
+                <p>You have the right to request data deletion or export. To do so, contact Pax support through the official server or email provided on the site.</p>
+            </div>
+
+            <button class="collapsible">6. Third-Party Services</button>
+            <div class="content">
+                <p>Pax may integrate with third-party services such as Discord APIs. These services have their own privacy policies. Pax does not share user data beyond what is necessary to interact with these services.</p>
+            </div>
+
+            <button class="collapsible">7. Policy Updates</button>
+            <div class="content">
+                <p>This privacy policy may be updated periodically. Users will be notified of significant changes, and continued use of Pax constitutes acceptance of updated policies.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer>
+        Pax – Made by Psy Veylein 💥
+    </footer>
+
+    <!-- ================== COLLAPSIBLE SCRIPT ================== -->
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach((item) => {
+            item.addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if(content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
