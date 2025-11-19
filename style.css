@@ -1,0 +1,127 @@
+/* ==== GLOBAL STYLING ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1b1b1b, #111111, #0c0c0c);
+    color: #f0f0f0;
+    padding: 30px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ==== HEADER ==== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff4f8b, #ffcc33, #7affc0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 8px;
+}
+
+/* ==== NAVIGATION BAR ==== */
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #ffffffdd;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #ff4f8b, #ffcc33);
+    color: #111;
+}
+
+/* ==== SECTION ==== */
+section {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 200, 100, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Headings inside section */
+section h2, section h3 {
+    background: linear-gradient(90deg, #ffcc33, #ff4f8b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+section p {
+    color: #e7e7e7;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+section ul {
+    padding-left: 20px;
+}
+
+section li {
+    padding: 5px 0;
+    color: #dcdcdc;
+}
+
+/* ==== BUTTON ==== */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff4f8b, #ffcc33, #7affc0);
+    transition: transform 0.2s ease, filter 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+}
+
+/* ==== LINKS ==== */
+a {
+    color: #ffa6d1;
+}
+
+a:hover {
+    color: #ffcc33;
+}
