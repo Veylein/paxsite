@@ -1,27 +1,85 @@
-    <!-- GLOBAL HEADER -->
-    <header>
-        <h1>Pax Official</h1>
-        <p>The Universal Discord RPG Ecosystem</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pax – The Ultimate Discord Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="tos.html">Terms</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="faq.html">FAQ</a>
-            <a href="support.html">Support</a>
-            <a href="invite.html">Invite</a>
-            <a href="creator.html">Creator</a>
-            <a href="extra.html">Extra</a>
-        </nav>
-    </header>
+    <!-- ================== NAVBAR ================== -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Gold_star_icon.png" alt="VIP Badge" style="height:24px; vertical-align:middle; margin-right:8px;">
+            Pax
+        </div>
+        <ul>
+            <li><a href="tos.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="invite.html">Invite</a></li>
+            <li><a href="credits.html">Creator</a></li>
+            <li><a href="extra.html">Extra</a></li>
+        </ul>
+    </nav>
 
-    <!-- PAGE CONTENT -->
-    <section>
-        <h2>Welcome to Pax</h2>
-        <p>Pax is a completely free Discord RPG featuring pets, chi, bosses, artifacts, gardening, rebirths, prestiges, hidden achievements, bundles, and secrets...</p>
-
-        <a class="button" href="invite.html">Invite Pax to Your Server</a>
+    <!-- ================== HERO SECTION ================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pax – The Ultimate Discord Bot</h1>
+            <p>Experience a fully-featured Discord RPG ecosystem with pets, bosses, achievements, minigames, music, cross-server stats, and more – all free!</p>
+            <button class="cta-btn" onclick="window.location.href='invite.html'">
+                Invite Pax <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Dragon_icon.png" alt="Dragon Icon" style="height:18px; vertical-align:middle; margin-left:6px;">
+            </button>
+        </div>
     </section>
+
+    <!-- ================== FEATURES SECTION ================== -->
+    <section>
+        <h2 class="section-title">Why Pax?</h2>
+        <div class="section-content">
+            <ul>
+                <li>🐼 Cross-server progression, pets, and achievements</li>
+                <li>🐉 Dynamic boss fights and rare loot</li>
+                <li>🛡️ Chi currency, rebirths, and prestige system</li>
+                <li>🎮 Mini-games, counting, riddles, and music</li>
+                <li>✨ Fully free – $0, nada, nothing</li>
+                <li>💎 Developed by Psy Veylein</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section>
+        <h2 class="section-title">Get Started Now</h2>
+        <div class="section-content" style="text-align:center;">
+            <button class="btn" onclick="window.location.href='invite.html'">Invite Pax</button>
+            <button class="btn" onclick="window.location.href='support.html'">Join Support Server</button>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer>
+        Pax – Made by Psy Veylein 💥
+    </footer>
+
+    <!-- ================== COLLAPSIBLE SCRIPT ================== -->
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach((item) => {
+            item.addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if(content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
